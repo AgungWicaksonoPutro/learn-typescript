@@ -26,3 +26,8 @@ const isiName = (first, last = "Putro") => {
     return first + " " + last;
 };
 console.log(isiName("Agung", "Wicaksono"));
+// Optional Parameter
+const getUmur = (num1, num2) => {
+    return num1 + num2;
+};
+// Number tidak bisa menggunakan optional

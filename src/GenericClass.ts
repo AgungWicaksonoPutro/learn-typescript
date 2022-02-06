@@ -1,0 +1,31 @@
+class List<T> {
+    private data: T[];
+
+    constructor(...elements: T[]){  // "..." rest parameter
+        this.data = elements;
+    }
+
+    add(element: T): void{
+        this.data.push(element);
+    }
+
+    addMultiple(...element: T[]): void {
+        this.data.push(...element);
+    }
+
+    getAll(): T[] {
+        return this.data;
+    }
+}
+
+
+let numbers = new List<number>(1,2,3,4);
+numbers.add(5); //Harus number yah
+numbers.addMultiple(7,8,9,10)
+console.log(numbers.getAll());
+
+let random = new List<number | string>(1, "A", 2, "B");
+random.add("Agung") //Boleh number or string
+random.add(21) //Boleh number or string
+console.log(random);
+

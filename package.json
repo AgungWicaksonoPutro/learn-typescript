@@ -8,7 +8,7 @@
   "scripts": {
     "tsc": "del -f build && tsc",
     "ts": "del -f build && tsc -w",
-    "dev": "nodemon ./build/Function.js"
+    "dev": "nodemon ./build/module/Product.js"
   },
   "devDependencies": {
     "typescript": "^4.5.5"

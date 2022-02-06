@@ -43,3 +43,11 @@ const isiName = (first: string, last: string = "Putro"): string => {
 }
 
 console.log(isiName("Agung", "Wicaksono"));
+
+// Optional Parameter
+
+const getUmur = (num1: string, num2?: string): string => {
+    return num1 + num2;
+}
+
+// Number tidak bisa menggunakan optional
